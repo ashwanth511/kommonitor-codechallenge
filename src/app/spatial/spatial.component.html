@@ -1,0 +1,27 @@
+<section class="py-5">
+  <h2 class="mb-5 text-center">Enter the Details</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <form (submit)="onSubmit()">
+          <div class="d-flex flex-column flex-md-row">
+            <input class="form-control mb-3 mr-5" name="id" [(ngModel)]="id" type="text" placeholder="ID" >
+            <input class="form-control mb-3 mr-5"  name="date"[(ngModel)]="date" type="date" placeholder="Date" >
+          </div>
+          <button class="btn btn-primary px-5 d-block mx-auto" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-5"><div class="container">
+  <h5 class="mb-5 text-center">Spatial Data will be  Displayed in the Below Map</h5>
+  <div class="mx-auto">
+    <div id="map" class="px-2"></div>
+  </div>
+  </div>
+</section>
